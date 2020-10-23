@@ -11,6 +11,8 @@
   </head>
   <body>
 
+    <h1 style="font-family: 'Arial'">My-input</h1>
+
     <div id="app">
 
       <my-input v-for="q in questions" :title="q.title" :placeholder="q.placeholder" :type="q.type" :required="q.required" :value="q.value" v-model="q.value" :pattern="q.pattern" :error_message="q.error_message"/>
