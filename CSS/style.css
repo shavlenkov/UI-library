@@ -8,7 +8,22 @@ header {
   font-family: 'Permanent Marker', cursive;
   padding: 10px;
 }
+
+main {
+  background: #e3e3e3;
+  padding: 10px;
+  font-size: 25px;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+}
+
+a {
+  color: #757575;
+  text-decoration: none;
+}
      
+a:hover { text-decoration: underline; }
+   
 footer {
   background: linear-gradient(to bottom, #7e7f80, #383838);
   color: #fff;
