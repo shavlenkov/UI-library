@@ -1,0 +1,716 @@
+/* Colors */
+
+button.button-error, input.button-error[type="button"] {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+button.button-error:hover, input.button-error[type="button"]:hover {
+  background-color: #cf0000;
+}
+
+button.button-error:focus, input.button-error[type="button"]:focus {
+  background: rgba(0, 0, 0, 0.0);
+  color: #ff0000;
+  outline: none;
+  border: 3px solid #ff0000; 
+  color: #ff0000;
+}
+
+div.button-error {
+  background-color: #ff0000;
+  color: #fff;
+  border: 2px solid #808080;
+  word-break: break-word;
+  width: 130px;
+}
+
+div.button-error:hover {
+  background-color: #cf0000;
+}
+
+div.button-error:active {
+  background: rgba(0, 0, 0, 0.0);
+  color: #ff0000;
+  outline: none;
+  border: 3px solid #ff0000; 
+}
+
+a.button-error {
+  display: block;
+  background-color: #ff0000;
+  color: #fff;
+  word-break: break-word;
+  width: 130px;
+  border: 2px solid #808080;
+  text-decoration: none;
+}
+
+a.button-error:hover {
+  background-color: #cf0000;
+}
+
+a.button-error:active {
+  background: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 3px solid #ff0000; 
+  color: #ff0000;
+}
+    
+button.button-success, input.button-success[type="button"] {
+  background-color: #00ff00;
+  color: #000;
+}
+    
+button.button-success:hover, input.button-success[type="button"]:hover {
+  background-color: #00c900;
+}
+
+button.button-success:focus, input.button-success[type="button"]:focus {
+  background: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 3px solid #00ff00; 
+  color: #00ff00;
+}
+
+div.button-success {
+  background-color: #00ff00;
+  color: #000;
+  border: 2px solid #808080;
+  word-break: break-word;
+  width: 130px;
+
+}
+
+div.button-success:hover {
+  background-color: #00c900;
+}
+
+div.button-success:active {
+  background: rgba(0, 0, 0, 0.0);
+  color: #00ff00;
+  outline: none;
+  border: 3px solid #00ff00; 
+}
+
+a.button-success {
+  display: block;
+  background-color: #00ff00;
+  color: #000;
+  word-break: break-word;
+  width: 130px;
+  border: 2px solid #808080;
+  text-decoration: none;
+}
+
+a.button-success:hover {
+  background-color: #00c900;
+}
+
+a.button-success:active {
+  background: rgba(0, 0, 0, 0.0);;
+  outline: none;
+  border: 3px solid #00ff00; 
+  color: #00ff00;
+}
+
+button.button-warning, input.button-warning[type="button"] {
+  background-color: #ffff00;
+  color: #000;
+}
+    
+button.button-warning:hover, input.button-warning[type="button"]:hover {
+  background-color: #c9c900;
+}
+     
+button.button-warning:focus, input.button-warning[type="button"]:focus {
+  background: rgba(0, 0, 0, 0.0);     
+  outline: none;
+  border: 3px solid #ffff00; 
+  color: #ffff00;
+}
+
+div.button-warning {
+  background-color: #ffff00;
+  color: #000;
+  border: 2px solid #808080;
+  word-break: break-word;
+  width: 130px;
+}
+
+div.button-warning:hover {
+  background-color: #c9c900;
+}
+
+div.button-warning:active {
+  background: rgba(0, 0, 0, 0.0);
+  color: #ffff00;
+  outline: none;
+  border: 3px solid #ffff00; 
+}
+
+a.button-warning {
+  display: block;
+  background-color: #ffff00;
+  color: #000;
+  word-break: break-word;
+  width: 130px;
+  border: 2px solid #808080;
+  text-decoration: none;
+}
+
+a.button-warning:hover {
+  background-color: #c9c900;
+}
+
+a.button-warning:active {
+  background: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 3px solid #ffff00; 
+  color: #ffff00;
+}
+
+button.button-info, input.button-info[type="button"] {
+  background-color: #00ffff;
+  color: #000;
+}
+
+button.button-info:hover, input.button-info[type="button"]:hover {
+  background-color: #00cfcf;
+}
+
+button.button-info:focus, input.button-info[type="button"]:focus {
+  background: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 3px solid #00ffff; 
+  color: #00ffff;
+}
+
+div.button-info {
+  background-color: #00ffff;
+  color: #000;
+  border: 2px solid #808080;
+  word-break: break-word;
+  width: 130px;
+}
+
+div.button-info:hover {
+  background-color: #00cfcf;
+}
+
+div.button-info:active {
+  background: rgba(0, 0, 0, 0.0);
+  color: #00ffff;
+  outline: none;
+  border: 3px solid #00ffff; 
+}
+
+a.button-info {
+  display: block;
+  background-color: #00ffff;
+  color: #000;
+  word-break: break-word;
+  width: 130px;
+  border: 2px solid #808080;
+  text-decoration: none;
+}
+
+a.button-info:hover {
+  background-color: #00cfcf;
+}
+
+a.button-info:active {
+  background: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 3px solid #00ffff; 
+  color: #00ffff;
+}
+
+button.button-black, input.button-black[type="button"] {
+  background-color: #292929;
+  color: #fff;
+}
+
+button.button-black:hover, input.button-black[type="button"]:hover {
+  background-color: #000;
+}
+
+button.button-black:focus, input.button-black[type="button"]:focus {
+  background: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 3px solid #292929; 
+  color: #292929;
+}
+
+div.button-black {
+  background-color: #292929;
+  color: #fff;
+  border: 2px solid #808080;
+  word-break: break-word;
+  width: 130px;
+}
+
+div.button-black:hover {
+  background-color: #000;
+}
+
+div.button-black:active {
+  background: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 3px solid #292929; 
+  color: #292929;
+}
+
+a.button-black {
+  display: block;
+  background-color: #292929;
+  color: #fff;
+  word-break: break-word;
+  width: 130px;
+  border: 2px solid #808080;
+  text-decoration: none;
+}
+
+a.button-black:hover {
+  background-color: #000;
+}
+
+a.button-black:active {
+  background: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 3px solid #292929;
+  color: #292929;
+}
+
+button.button-white, input.button-white[type="button"] {
+  background-color: #fff;
+  color: #000;
+}
+
+button.button-white:hover, input.button-white[type="button"]:hover {
+  background-color: #d1d1d1;
+}
+
+button.button-white:focus, input.button-white[type="button"]:focus {
+  background: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 3px solid #808080; 
+  color: #808080;
+}
+
+div.button-white {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #808080;
+  word-break: break-word;
+  width: 130px;
+}
+
+div.button-white:hover {
+  background-color: #d1d1d1;
+}
+
+div.button-white:active {
+  background: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 3px solid #808080; 
+  color: #808080;
+}
+
+a.button-white {
+  display: block;
+  background-color: #fff;
+  color: #000;
+  word-break: break-word;
+  width: 130px;
+  border: 2px solid #808080;
+  text-decoration: none;
+}
+
+a.button-white:hover {
+  background-color: #d1d1d1;
+}
+
+a.button-white:active {
+  background: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 3px solid #808080; 
+  color: #808080;
+}
+
+button.button-primary, input.button-primary[type="button"] {
+  background-color: #0000ff;
+  color: #fff;
+}
+
+button.button-primary:hover, input.button-primary[type="button"]:hover {
+  background-color: #0000cf;
+}
+
+button.button-primary:focus, input.button-primary[type="button"]:focus {
+  background: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 3px solid #0000ff; 
+  color: #0000ff;
+}
+
+div.button-primary {
+  background-color: #0000ff;
+  color: #fff;
+  border: 2px solid #808080;
+  word-break: break-word;
+  width: 130px;
+}
+
+div.button-primary:hover {
+  background-color: #0000cf;
+}
+
+div.button-primary:active {
+  background: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 3px solid #0000ff; 
+  color: #0000ff;
+}
+
+a.button-primary {
+  display: block;
+  background-color: #0000ff;
+  color: #fff;
+  word-break: break-word;
+  width: 130px;
+  border: 2px solid #808080;
+  text-decoration: none;
+}
+
+a.button-primary:hover {
+  background-color: #0000cf;
+}
+
+a.button-primary:active {
+  background: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 3px solid #0000ff; 
+  color: #0000ff;
+}
+
+button.button-secondary, input.button-secondary[type="button"] {
+  background-color: #808080;
+  color: #fff;
+}
+
+button.button-secondary:hover, input.button-secondary[type="button"]:hover {
+  background-color: #595959;
+}
+
+button.button-secondary:focus, input.button-secondary[type="button"]:focus {
+  background: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 3px solid #808080; 
+  color: #808080;
+}
+
+div.button-secondary {
+  background-color: #808080;
+  color: #fff;
+  border: 2px solid #d0d0d0;
+  word-break: break-word;
+  width: 130px;
+}
+
+div.button-secondary:hover {
+  background-color: #595959;
+}
+
+div.button-secondary:active {
+  background: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 3px solid #808080; 
+  color: #808080;
+}
+
+a.button-secondary {
+  display: block;
+  background-color: #808080;
+  color: #fff;
+  word-break: break-word;
+  width: 130px;
+  border: 2px solid #d0d0d0;
+  text-decoration: none;
+}
+
+a.button-secondary:hover {
+  background-color: #595959;
+}
+
+a.button-secondary:active {
+  background: rgba(0, 0, 0, 0.0);
+  outline: none;
+  border: 3px solid #808080; 
+  color: #808080;
+}
+
+/* Gradient */
+
+button.button-error-gradient, input.button-error-gradient {
+  background: linear-gradient(to bottom, #fcd9d7, #ff0000);
+  color: #fff;
+  border: 2px solid #808080;
+}
+
+button.button-success-gradient, input.button-success-gradient {
+  background: linear-gradient(to bottom, #d5f7d5, #00ff00);
+  border: 2px solid #808080;
+}
+
+button.button-warning-gradient, input.button-warning-gradient {
+  background: linear-gradient(to bottom, #ffffd9, #ffff00);
+  border: 2px solid #808080;
+}
+
+button.button-info-gradient, input.button-info-gradient {
+  background: linear-gradient(to bottom, #d6ffff, #00ffff);
+  border: 2px solid #808080;
+}
+
+button.button-black-gradient, input.button-black-gradient {
+  background: linear-gradient(to bottom, #b5b5b5, #000);
+  color: #fff;
+  border: 2px solid #808080;
+}
+
+button.button-white-gradient, input.button-white-gradient {
+  background: linear-gradient(to bottom, #fff, #bfbfbf);
+  border: 2px solid #808080;
+}
+
+button.button-primary-gradient, input.button-primary-gradient {
+  background: linear-gradient(to bottom, #d6d6ff, #0000ff);
+  color: #fff;
+  border: 2px solid #808080;
+}
+    
+button.button-secondary-gradient, input.button-secondary-gradient {
+  background: linear-gradient(to bottom, #bfbfbf, #808080);
+  color: #fff;
+  border: 2px solid #808080;
+}
+
+div.button-error-gradient, a.button-error-gradient {
+  background: linear-gradient(to bottom, #fcd9d7, #ff0000);
+  color: #fff;
+  word-break: break-word;
+  width: 130px;
+  border: 2px solid #808080;
+  display: block;
+  text-decoration: none;
+}
+
+div.button-error-gradient:hover, a.button-error-gradient:hover {
+  cursor: default;
+}
+
+div.button-error-gradient:active, a.button-error-gradient:active {
+  border: 3px solid #000;
+  border-radius: 7px;
+}
+
+div.button-success-gradient, a.button-success-gradient {
+  background: linear-gradient(to bottom, #d5f7d5, #00ff00);
+  word-break: break-word;
+  width: 130px;
+  border: 2px solid #808080;
+  display: block;
+  text-decoration: none;
+}
+
+div.button-success-gradient:hover, a.button-success-gradient:hover {
+  cursor: default;
+}
+
+div.button-success-gradient:active, a.button-success-gradient:active {
+  border: 3px solid #000;
+  border-radius: 7px;
+}
+
+div.button-warning-gradient, a.button-warning-gradient {
+  background: linear-gradient(to bottom, #ffffd9, #ffff00);
+  word-break: break-word;
+  width: 130px;
+  border: 2px solid #808080;
+  display: block;
+  text-decoration: none;
+}
+
+div.button-warning-gradient:hover, a.button-warning-gradient:hover {
+  cursor: default;
+}
+
+div.button-warning-gradient:active, a.button-warning-gradient:active {
+  border: 3px solid #000;
+  border-radius: 7px;
+}
+
+div.button-info-gradient, a.button-info-gradient {
+  background: linear-gradient(to bottom, #d6ffff, #00ffff);
+  word-break: break-word;
+  width: 130px;
+  border: 2px solid #808080;
+  display: block;
+  text-decoration: none;
+}
+
+div.button-info-gradient:hover, a.button-info-gradient:hover {
+  cursor: default;
+}
+
+div.button-info-gradient:active, a.button-info-gradient:active {
+  border: 3px solid #000;
+  border-radius: 7px;
+}
+
+div.button-black-gradient, a.button-black-gradient {
+  background: linear-gradient(to bottom, #b5b5b5, #000);
+  color: #fff;
+  word-break: break-word;
+  width: 130px;
+  border: 2px solid #808080;
+  display: block;
+  text-decoration: none;
+}
+
+div.button-black-gradient:hover, a.button-black-gradient:hover {
+  cursor: default;
+}
+
+div.button-black-gradient:active, a.button-black-gradient:active {
+  border: 3px solid #000;
+  border-radius: 7px;
+}
+
+div.button-white-gradient, a.button-white-gradient {
+  background: linear-gradient(to bottom, #fff, #bfbfbf);
+  word-break: break-word;
+  width: 130px;
+  border: 2px solid #808080;
+  display: block;
+  text-decoration: none;
+}
+
+div.button-white-gradient:hover, a.button-white-gradient:hover {
+  cursor: default;
+}
+
+div.button-white-gradient:active, a.button-white-gradient:active {
+  border: 3px solid #000;
+  border-radius: 7px;
+}
+
+div.button-primary-gradient, a.button-primary-gradient {
+  background: linear-gradient(to bottom, #d6d6ff, #0000ff);
+  color: #fff;
+  word-break: break-word;
+  width: 130px;
+  border: 2px solid #808080;
+  display: block;
+  text-decoration: none;
+}
+
+div.button-primary-gradient:hover, a.button-primary-gradient:hover {
+  cursor: default;
+}
+
+div.button-primary-gradient:active, a.button-primary-gradient:active {
+  border: 3px solid #000;
+  border-radius: 7px;
+}
+    
+div.button-secondary-gradient, a.button-secondary-gradient {
+  background: linear-gradient(to bottom, #bfbfbf, #808080);
+  color: #fff;
+  word-break: break-word;
+  width: 130px;
+  border: 2px solid #808080;
+  display: block;
+  text-decoration: none;
+}
+
+div.button-secondary-gradient:hover, a.button-secondary-gradient:hover {
+  cursor: default;
+}
+
+div.button-secondary-gradient:active, a.button-secondary-gradient:active {
+  border: 3px solid #000;
+  border-radius: 7px;
+}
+   
+/* Sizes */
+
+button.button-smoll, input.button-smoll[type="button"], div.button-smoll, a.button-smoll {
+  font-size: 20px;
+}
+
+button.button-standart, input.button-standart[type="button"], div.button-standart, a.button-standart {
+  font-size: 40px;
+}
+
+button.button-big, input.button-big[type="button"], div.button-big, a.button-big {
+  font-size: 60px;
+}
+
+/* State */
+
+button.button-outlined, input.button-outlined[type="button"] {
+  background: rgba(0, 0, 0, 0);
+  outline: none;
+  border: 2px solid #000;
+  color: #000 !important;
+}
+
+button.button-outlined:hover, input.button-outlined[type="button"]:hover {
+  background: rgba(0, 0, 0, 0);
+  outline: none;
+  border: 2px solid #000;
+  color: #000;
+}
+
+button.button-outlined:focus, input.button-outlined[type="button"]:focus  {
+  border: 3px solid #000;
+}
+
+div.button-outlined, a.button-outlined {
+  background: rgba(0, 0, 0, 0) !important;
+  outline: none;
+  border: 2px solid #000;
+  color: #000 !important;
+  word-break: break-word;
+  width: 130px;
+}
+
+div.button-outlined, a.button-outlined:hover {
+  background: rgba(0, 0, 0, 0);
+  outline: none;
+  border: 2px solid #000;
+  color: #000;
+}
+
+div.button-outlined:active, a.button-outlined:active {
+  border: 3px solid #000;
+}
+
+button.button-disabled:disabled, input.button-disabled, div.button-disabled, a.button-disabled {
+  opacity: 0.3;
+}
+
+/* Shape */
+   
+button.button-circle, input.button-circle, div.button-circle, a.button-circle {
+  border-radius: 50%;
+  padding: 25px;
+  outline: none;
+}
+
+button.button-edge, input.button-edge, div.button-edge, a.button-edge {
+  border-radius: 10px;
+  outline: none;
+}
