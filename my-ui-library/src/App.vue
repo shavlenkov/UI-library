@@ -8,7 +8,9 @@
 
     <router-link to="/Modal">Modal</router-link><br/><br/>
 
-    <router-link to="/Carousel">Carousel</router-link>
+    <router-link to="/Carousel">Carousel</router-link><br/><br/>
+
+    <router-link to="/DataTable">DataTable</router-link>
 
   </div>
 
