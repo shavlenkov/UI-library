@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import MyButtonView from '../views/MyButtonView.vue'
+import GridView from '../views/GridView.vue'
 
 const routes: Array<RouteRecordRaw> = [
 
@@ -8,7 +9,13 @@ const routes: Array<RouteRecordRaw> = [
     name: 'MyButtonView',
     component: MyButtonView
   },
-  
+
+  {
+    path: '/Grid',
+    name: 'GridView',
+    component: GridView
+  },
+
 ]
 
 const router = createRouter({
