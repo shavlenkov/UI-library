@@ -2,6 +2,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import MyButtonView from '../views/MyButtonView.vue'
 import GridView from '../views/GridView.vue'
 import ModalView from '../views/ModalView.vue'
+import CarouselView from '../views/CarouselView.vue'
 
 const routes: Array<RouteRecordRaw> = [
 
@@ -21,6 +22,12 @@ const routes: Array<RouteRecordRaw> = [
     path: '/Modal',
     name: 'ModalView',
     component: ModalView
+  },
+
+  {
+    path: '/Carousel',
+    name: 'CarouselView',
+    component: CarouselView
   },
 
 ]
