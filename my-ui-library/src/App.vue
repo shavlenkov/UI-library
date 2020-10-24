@@ -6,7 +6,9 @@
 
     <router-link to="/Grid">Grid</router-link><br/><br/>
 
-    <router-link to="/Modal">Modal</router-link>
+    <router-link to="/Modal">Modal</router-link><br/><br/>
+
+    <router-link to="/Carousel">Carousel</router-link>
 
   </div>
 
