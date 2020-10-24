@@ -4,7 +4,9 @@
 
     <router-link to="/MyButton">MyButton</router-link><br/><br/>
 
-    <router-link to="/Grid">Grid</router-link>
+    <router-link to="/Grid">Grid</router-link><br/><br/>
+
+    <router-link to="/Modal">Modal</router-link>
 
   </div>
 
