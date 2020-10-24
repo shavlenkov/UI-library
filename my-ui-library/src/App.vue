@@ -2,7 +2,9 @@
 
   <div id="nav">
 
-    <router-link to="/MyButton">MyButton</router-link>
+    <router-link to="/MyButton">MyButton</router-link><br/><br/>
+
+    <router-link to="/Grid">Grid</router-link>
 
   </div>
 
@@ -30,5 +32,5 @@
       }
     }
   }
-  
+
 </style>
