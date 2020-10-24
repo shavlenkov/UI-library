@@ -3,6 +3,7 @@ import MyButtonView from '../views/MyButtonView.vue'
 import GridView from '../views/GridView.vue'
 import ModalView from '../views/ModalView.vue'
 import CarouselView from '../views/CarouselView.vue'
+import DataTableView from '../views/DataTableView.vue'
 
 const routes: Array<RouteRecordRaw> = [
 
@@ -28,6 +29,18 @@ const routes: Array<RouteRecordRaw> = [
     path: '/Carousel',
     name: 'CarouselView',
     component: CarouselView
+  },
+
+  {
+    path: '/Carousel',
+    name: 'CarouselView',
+    component: CarouselView
+  },
+
+  {
+    path: '/DataTable',
+    name: 'DataTableView',
+    component: DataTableView
   },
 
 ]
