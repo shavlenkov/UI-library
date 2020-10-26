@@ -1,42 +1,104 @@
 <template>
+<Navbar>
 
-  <div id="nav">
+    <template #brand>
 
-    <router-link to="/MyButton">MyButton</router-link><br/><br/>
+      <img class="logo" src="../public/logo.png" width="280" height="50"/>
 
-    <router-link to="/Grid">Grid</router-link><br/><br/>
+    </template>
 
-    <router-link to="/Modal">Modal</router-link><br/><br/>
+    <template #menu>
+      
+      <router-link to="/MyButton">MyButton</router-link>
 
-    <router-link to="/Carousel">Carousel</router-link><br/><br/>
+      <router-link to="/Grid">Grid</router-link>
 
-    <router-link to="/DataTable">DataTable</router-link>
+      <router-link to="/Modal">Modal</router-link>
+
+      <router-link to="/Carousel">Carousel</router-link>
+
+      <router-link to="/DataTable">DataTable</router-link>
+
+    </template>
+
+  </Navbar>
+
+  <br/><br/>
+
+  <div class="view">
+
+    <router-view/>
 
   </div>
 
-  <router-view/>
+  <div class="count-particles">
+    <span class="js-count-particles">--</span>
+  </div>
+
+  
 
 </template>
 
 <style lang="less">
 
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
+  body {
+    background: url("../public/starry_sky.jpg");
   }
 
-  #nav {
-    padding: 30px;
-    a {
-      font-weight: bold;
-      color: #2c3e50;
-      &.router-link-exact-active {
-        color: #42b983;
+  .view {
+
+    background: linear-gradient(180deg, #ff7700, #fff200, #22ff00, #4059ff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+    @keyframes gradient {
+
+      0% {
+        background-position: 0% 25%;
       }
+
+      25% {
+        background-position: 25% 50%;
+      }
+
+      50% {
+        background-position: 50% 75%;
+      }
+
+      75% {
+        background-position: 75% 100%;
+      }
+
+      100% {
+        background-position: 100% 0%;
+      } 
+
     }
+
+    margin-top: -60px;
+  }
+
+  h1 {
+    font-family: 'Arial';
   }
 
 </style>
+
+<script lang="ts">
+
+  import { defineComponent } from 'vue';
+  
+  import Navbar from '@/components/Navbar.vue';
+  
+  export default defineComponent({
+
+    name: "NavbarView",
+
+    components: {
+      Navbar,
+    },
+
+  });
+
+  
+</script>
