@@ -45,6 +45,7 @@
           {id: 2, name: 'Петя', surname: 'Васечкин', age: 16},
         ],
 
+
         thead: [
           {title: 'Название', value: 'name', sortable: true},
           {title: 'Тип', value: 'type'},
