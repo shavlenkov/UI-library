@@ -5,12 +5,42 @@
 <script lang="ts">
 
   import { defineComponent } from 'vue';
+
+  type Color = "error" | "success" | "warning" | "info" | "black" | "white" | "primary" | "secondary"
+  type Size = "smoll" | "standart" | "big"
+  type Shape = "circle" | "edge"
+  type State = "outlined" | "disabled"
    
   export default defineComponent({
 
     name: "MyButton",
 
-    props: ["click", "color", "size", "shape", "state"]
+    props: {
+
+      color: {
+        type: String as () => Color,
+        default: "secondary",
+      },
+
+      size: {
+        type: String as () => Size,
+        default: "standart",
+      },
+
+      shape: {
+        type: String as () => Shape,
+        default: "edge",
+      },
+
+      state: {
+        type: String as () => State,
+      },
+      
+      click: {
+        type: Object,
+      }
+
+    },
 
   });
 
