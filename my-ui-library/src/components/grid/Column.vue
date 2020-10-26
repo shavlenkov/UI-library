@@ -10,12 +10,41 @@
 <script lang="ts">
 
   import { defineComponent } from 'vue';
+
+  type Column = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
    
   export default defineComponent({
 
     name: "Column",
     
-    props: ["xs", "sm", "md", "lg", "xl"]
+    props: {
+      
+       xs: {
+         type: Number as () => Column,
+         default: "12", 
+       },
+
+       sm: {
+         type: Number as () => Column,
+         default: "12",
+       },
+
+       md: {
+         type: Number as () => Column,
+         default: "12",
+       },
+
+       lg: {
+         type: Number as () => Column,
+         default: "12",
+       },
+
+       xl: {
+         type: Number as () => Column,
+         default: "12",
+       },
+
+    }
 
   });
 
