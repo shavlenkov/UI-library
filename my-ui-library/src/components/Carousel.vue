@@ -18,7 +18,13 @@
     
     name: "Carousel",
 
-    props: ["slides"],
+    props: {
+      
+      slides: {
+        type: Array,
+      }
+
+    },
 
     data() {
 
@@ -48,7 +54,8 @@
 .carousel-item img {
   width: 50%;
   height: 50%;
-  margin-top: 40px;
+  margin-left: 25%;
+  margin-top: 50px;
 }
 
 .prev, .next {
@@ -58,9 +65,8 @@
   position: absolute;
   top: 50%;
   padding: 16px;
+  margin: 40px;
   cursor: pointer;
-  margin-left: -30%;
-  margin-right: 20%;
 }
 
 .next {
