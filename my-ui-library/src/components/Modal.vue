@@ -1,6 +1,9 @@
 <template>
+
   <div>
+
     <button v-on:click="hidden = true">{{button}}</button>
+
     <div class="modal" v-if="hidden">
       <div class="modal-header">
         <b v-on:click="hidden = false" class="times" style="font-size: 30px; cursor: pointer;">&times;</b>
@@ -15,6 +18,7 @@
     </div>
 
   </div>
+  
 </template>
 
 <script type="ts">
@@ -25,7 +29,13 @@
 
     name: "Modal",
 
-    props: ["button"],
+    props: {
+      
+      button: {
+        type: String,
+      }
+
+    },
 
     data() {
 
