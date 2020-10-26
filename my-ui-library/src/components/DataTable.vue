@@ -27,13 +27,40 @@
 <script lang="ts">
 
   import { defineComponent } from 'vue';
+
+  interface ITableItem {
+    title: string;
+    value: string;
+    sortable: boolean;
+  }
+
+  interface ITableColumn {
+    [key: string]: string;
+  }
+    
+  interface ISearchConfig {
+    fields: Array;
+  }
   
   export default defineComponent({
 
     name: "DataTable",
 
-    props: ["items", "columns", "search"],
-    
+    props: {
+
+      items: {
+        type: Array as () => ITableItem[],
+      },
+
+      columns: {
+        type: Array as () => ITableColumn[],
+      },
+
+      search: {
+        type: Object as () => ISearchConfig,
+      },
+
+    },
 
     data() {
 
