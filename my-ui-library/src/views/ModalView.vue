@@ -20,7 +20,23 @@
 
   <br/><br/>
 
-  <img src="../../public/ModalCode/code1.png"/>
+  <code>
+    &ltModal button="Show"&gt<br/><br/>
+
+    &nbsp&nbsp&lttemplate v-slot:header&gt<br/>
+    &nbsp&nbsp&nbsp&nbsp&lth1Header&lt/h1&gt<br/>
+    &nbsp&nbsp&lt/template&gt<br/><br/>
+
+    &nbsp&nbsp&lttemplate v-slot:body&gt<br/>
+    &nbsp&nbsp&nbsp&nbsp&lth3Body&lt/h3&gt<br/>
+    &nbsp&nbsp&lt/template&gt<br/><br/>
+
+    &nbsp&nbsp&lttemplate v-slot:footer&gt<br/>
+    &nbsp&nbsp&nbsp&nbsp&lth3Footer&lt/h3&gt<br/>
+    &nbsp&nbsp&lt/template&gt<br/><br/>
+
+    &lt/Modal&gt   
+  </code>
 
   <br/><br/>
 
