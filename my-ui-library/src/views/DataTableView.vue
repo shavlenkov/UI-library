@@ -6,8 +6,37 @@
 
   <br/><br/>
 
-  <img src="../../public/DataTableCode/code1.png"/>
-  <img src="../../public/DataTableCode/code2.png"/>
+  <code>
+    &ltDataTable :items="config" :columns="users" :search="search"/&gt
+  </code>
+  
+  <br/><br/>
+
+  <code>
+    data() {<br/><br/>
+
+      &nbsp&nbspreturn {<br/><br/>
+
+        &nbsp&nbsp&nbsp&nbspconfig: [<br/>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{title: '№', value: 'id', sortable: true},<br/>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{title: 'Имя', value: 'name'},<br/>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{title: 'Фамилия', value: 'surname'},<br/>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{title: 'Возраст', value: 'age'},<br/>
+        &nbsp&nbsp&nbsp&nbsp],<br/><br/>
+
+        &nbsp&nbsp&nbsp&nbspusers: [<br/>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{id: 1, name: 'Вася', surname: 'Петров', age: 20},<br/>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{id: 2, name: 'Петя', surname: 'Васечкин', age: 16},<br/>
+        &nbsp&nbsp&nbsp&nbsp],<br/><br/>
+
+        &nbsp&nbsp&nbsp&nbspsearch: {<br/>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbspfields: [],<br/>
+        &nbsp&nbsp&nbsp&nbsp},<br/><br/>
+
+      &nbsp&nbsp}<br/><br/>
+
+    }
+  </code>
 
   <br/><br/>
 
