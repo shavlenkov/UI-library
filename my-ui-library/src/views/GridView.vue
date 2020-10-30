@@ -10,21 +10,19 @@
 
   <br/><br/>
 
-  <img src="../../public/GridCode/code1.png" id="grid"/>
+  <code>  
+    &ltRow&gt<br/>
+    &nbsp&nbsp&ltColumn xs="12" sm="12" lg="4" xl="4" style="background: red"&gtRed&lt/Column&gt<br/>
+    &nbsp&nbsp&ltColumn xs="12" sm="12" lg="4" xl="4" style="background: yellow"&gtYellow&lt/Column&gt<br/>
+    &nbsp&nbsp&ltColumn xs="12" sm="12" lg="4" xl="4" style="background: lime"&gtGreen&lt/Column&gt<br/>
+    &lt/Row&gt
+  </code>
 
   <br/><br/>
 
   <DataTable :items="thead" :columns="tbody" :search="search"/>
 
 </template>
-
-<style lang="less">
-
-  #grid {
-    width: 100%;
-  }
-
-</style>
 
 <script lang="ts">
 
