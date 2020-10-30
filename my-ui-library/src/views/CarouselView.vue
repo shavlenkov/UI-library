@@ -6,8 +6,24 @@
 
   <br/><br/>
 
-  <img src="../../public/CarouselCode/code1.png"/><br/>
-  <img src="../../public/CarouselCode/code2.png" id="carousel"/>
+  <code>
+    &ltCarousel :slides="slides"/&gt
+  </code>
+  
+  <br/><br/>
+
+  <code>
+    data() {<br/>
+
+      &nbsp&nbspreturn {<br/>
+
+        &nbsp&nbsp&nbsp&nbspslides: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png", "https://pluralsight.imgix.net/paths/path-icons/angular-14a0f6532f.png"],<br/>
+
+
+      &nbsp&nbsp}<br/>
+
+    }
+  </code>
 
   <br/><br/>
 
