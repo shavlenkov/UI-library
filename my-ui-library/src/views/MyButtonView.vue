@@ -2,6 +2,8 @@
 
   <h1>MyButton</h1>
 
+  <h3>color</h3>
+
   <MyButton color="error">Button</MyButton>
   <MyButton color="success">Button</MyButton>
   <MyButton color="warning">Button</MyButton>
@@ -13,7 +15,16 @@
 
   <br/><br/>
 
-  <img src="../../public/MyButtonCode/code1.png"/>
+  <code>
+    &ltMyButton color="error"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="success"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="warning"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="info"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="black"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="white"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="primary"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="secondary"&gtButton&lt/MyButton&gt
+  </code>
 
   <br/><br/>
 
@@ -28,9 +39,20 @@
 
   <br/><br/>
 
-  <img src="../../public/MyButtonCode/code2.png"/>
+  <code>
+    &ltMyButton color="error-gradient"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="success-gradient"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="warning-gradient"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="info-gradient"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="black-gradient"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="white-gradient"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="primary-gradient"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="secondary-gradient"&gtButton&lt/MyButton&gt
+  </code>
 
   <br/><br/>
+
+  <h3>size</h3>
 
   <MyButton color="primary" size="smoll">Button</MyButton>
   <MyButton color="primary" size="standart">Button</MyButton>
@@ -38,16 +60,25 @@
 
   <br/><br/>
 
-  <img src="../../public/MyButtonCode/code3.png"/>
+   <code>
+    &ltMyButton color="error-gradient" size="smoll"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="success-gradient" size="standart"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="warning-gradient" size="big"&gtButton&lt/MyButton&gt
+  </code>
 
   <br/><br/>
+
+  <h3>shape</h3>
 
   <MyButton color="primary" size="standart" shape="circle">Button</MyButton>
   <MyButton color="primary" size="standart" shape="edge">Button</MyButton>
 
   <br/><br/>
 
-  <img src="../../public/MyButtonCode/code4.png"/>
+  <code>
+    &ltMyButton color="error-gradient" size="smoll" shape="circle"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="success-gradient" size="standart" shape="edge"&gtButton&lt/MyButton&gt
+  </code>
 
   <br/><br/>
 
@@ -56,25 +87,38 @@
 
   <br/><br/>
 
-  <img src="../../public/MyButtonCode/code5.png"/>
+  <h3>state</h3>
+
+  <code>
+    &ltMyButton color="error-gradient" size="smoll" shape="circle" state="outlined"&gtButton&lt/MyButton&gt<br/>
+    &ltMyButton color="success-gradient" size="standart" shape="edge" state="disabled" disabled&gtButton&lt/MyButton&gt
+  </code>
 
   <br/><br/>
+
+  <h3>:click</h3>
 
   <MyButton color="primary" size="standart" shape="edge" :click="message">Button</MyButton>
 
   <br/><br/>
 
-  <img src="../../public/MyButtonCode/code6.png"/>
-  <img src="../../public/MyButtonCode/code7.png"/>
+  <code> 
+    &ltMyButton color="error-gradient" size="smoll" shape="edge" :click="message"&gtButton&lt/MyButton&gt<br/>
+  </code>
+
+  <br/><br/>
+
+  <code> 
+    methods: {<br/>
+      &nbsp&nbspmessage: () => {<br/>
+       &nbsp&nbsp&nbsp&nbspalert("Hello, world!");<br/>
+      &nbsp&nbsp}<br/>
+    }
+  </code>
 
   <br/><br/>
 
   <DataTable :items="thead" :columns="tbody" :search="search"/>
-
-  <vue-markdown> 
-
-   ##Test
-  </vue-markdown>
 
 </template>
 
