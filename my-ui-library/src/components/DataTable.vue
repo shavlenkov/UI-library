@@ -35,11 +35,11 @@
   }
 
   interface ITableColumn {
-    [key: string]: string;
+    [key: string]: string | number;
   }
     
   interface ISearchConfig {
-    fields: Array;
+    fields: Array<string>;
   }
   
   export default defineComponent({
@@ -68,49 +68,48 @@
         value: '',
         copyUsers: this.columns,
         counter: -1,
-        thisColumn: null
+        thisColumn: {} as ITableItem
+
       };
 
     },
 
     methods: {
 
-      sortDataByColumn(column: any) {
+      sortDataByColumn(item: ITableItem) {
 
-        if(!column) return;
+        if(!item) return;
 
-        if(this.thisColumn != column) {
+        if(this.thisColumn != item) {
           this.counter = -1;
-          this.thisColumn = column;
+          this.thisColumn = item;
         }
 
         this.counter++;
-        console.log(this.copyUsers)
-        console.log(this.counter, this.columns)
 
-        this.copyUsers = [...this.columns].sort((user1: any, user2: any) => {
-          if(typeof user1[column.value] == "string") {
+        this.copyUsers = this!.columns!.slice().sort((user1: ITableColumn, user2: ITableColumn):number => {
+          if(typeof user1[item.value as string] == "string") {
 
             if(this.counter == 0){
-              return user1[column.value].localeCompare(user2[column.value]);
+              return (user1[item.value as string] as string ).localeCompare(user2[item.value as string] as string);
             } else if (this.counter == 1){
-              return user2[column.value].localeCompare(user1[column.value]);
+              return (user2[item.value as string] as string ).localeCompare(user2[item.value as string] as string);
             } else {
               this.counter = -1;
               return 0;
             }
 
-          } else if (typeof user1[column.value] == "number"){
+          } else if (typeof user1[item.value as string] == "number"){
             if(this.counter == 0){
-              return user1[column.value] - user2[column.value];
+              return (user1[item.value as string] as number) - (user2[item.value as string] as number);
             } else if (this.counter == 1){
-              return user2[column.value] - user1[column.value];
+              return (user2[item.value as string] as number) - (user1[item.value as string] as number);
             } else {
               this.counter = -1;
               return 0;
             }
           }
-
+         return 0;
         });
 
         let icon = document.querySelectorAll("i[sort]")[0];
@@ -137,12 +136,12 @@
 
     computed: {
 
-      searchColumns: function (): Array<any> {
+      searchColumns: function (): Array<ITableColumn> | undefined {
         const value = this.value;
 
         if (value) {
 
-          return this.copyUsers.filter(function (user: { [key: string]: any }) {
+          return this?.copyUsers?.filter(function (user: ITableColumn) {
 
             const res = Object.keys(user).filter(function (key: string): boolean { 
               return user[key]
@@ -165,6 +164,7 @@
 </script>
 
 <style>
+
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kufam:ital@1&display=swap');
 
