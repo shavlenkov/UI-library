@@ -4,10 +4,11 @@
   </div>
 </template>
 
+
 <script lang="ts">
 
   import { defineComponent } from 'vue';
-   
+
   export default defineComponent({
 
     name: "Row",
@@ -19,7 +20,7 @@
 <style lang="less">
 
   body { margin: 0; }
-	  
+
   .row {
     width: 100%;
     display: flex;
