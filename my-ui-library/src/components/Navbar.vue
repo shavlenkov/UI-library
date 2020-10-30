@@ -84,14 +84,8 @@
 
     a[href]:hover { background: @gray; }
 
-    .view {
-      width: 600px;
-      margin: 0 auto;
-    }
-
     .logo { margin-right: 45%; }
     
-
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
@@ -129,6 +123,7 @@
     .view {
       width: 600px;
       margin: 0 auto;
+      margin-top: -20px;
     }
 
     .logo { margin-right: 45%; }
@@ -156,7 +151,7 @@
       display: flex;
     }
 
-    a[href] {
+    a.router-link {
       width: 100%;
       color: @white;
       text-decoration: none;
@@ -166,12 +161,7 @@
       font-family: "Arial";
     }
 
-    a[href]:hover { background: @gray; }
-
-    .view {
-      width: 900px;
-      margin: 0 auto;
-    }
+    a.router-link:hover, a.router-link-active { background: @gray; }
 
   }
 
