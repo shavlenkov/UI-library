@@ -2,7 +2,7 @@
 
   <h1>MyButton</h1>
 
-  <h3>color</h3>
+  <h2>color</h2>
 
   <MyButton color="error">Button</MyButton>
   <MyButton color="success">Button</MyButton>
@@ -52,7 +52,7 @@
 
   <br/><br/>
 
-  <h3>size</h3>
+  <h2>size</h2>
 
   <MyButton color="primary" size="smoll">Button</MyButton>
   <MyButton color="primary" size="standart">Button</MyButton>
@@ -68,7 +68,7 @@
 
   <br/><br/>
 
-  <h3>shape</h3>
+  <h2>shape</h2>
 
   <MyButton color="primary" size="standart" shape="circle">Button</MyButton>
   <MyButton color="primary" size="standart" shape="edge">Button</MyButton>
@@ -82,12 +82,12 @@
 
   <br/><br/>
 
+ <h2>state</h2>
+
   <MyButton color="primary" size="standart" shape="edge" state="outlined">Button</MyButton>
   <MyButton color="primary" size="standart" shape="edge" state="disabled" disabled>Button</MyButton>
 
   <br/><br/>
-
-  <h3>state</h3>
 
   <code>
     &ltMyButton color="error-gradient" size="smoll" shape="circle" state="outlined"&gtButton&lt/MyButton&gt<br/>
@@ -96,7 +96,7 @@
 
   <br/><br/>
 
-  <h3>:click</h3>
+  <h2>:click</h2>
 
   <MyButton color="primary" size="standart" shape="edge" :click="message">Button</MyButton>
 
