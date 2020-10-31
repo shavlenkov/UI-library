@@ -76,7 +76,7 @@
 
   }
 
-  h1, h3 {
+  h1, h2 {
     font-family: 'Arial';
   }
 
