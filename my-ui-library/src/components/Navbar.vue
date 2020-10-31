@@ -120,12 +120,6 @@
 
     a[href]:hover { background: @gray; }
 
-    .view {
-      width: 600px;
-      margin: 0 auto;
-      margin-top: -20px;
-    }
-
     .logo { margin-right: 45%; }
 
   }
