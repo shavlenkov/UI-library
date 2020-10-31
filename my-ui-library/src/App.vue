@@ -41,9 +41,7 @@
     background-repeat: repeat;
   }
 
-  .view {
-    background: linear-gradient(to bottom, #00ffc8, #006eff);
-  }
+  .view { background: linear-gradient(to bottom, #00ffc8, #006eff); }
 
   @media (max-width: 767px) {
 
