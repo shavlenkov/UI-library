@@ -1,5 +1,7 @@
 <template>
+
   <div class="carousel">
+    
     <div class="carousel-item">
       <img v-bind:src="slides[Math.abs(index) % slides.length]"/>
     </div>
@@ -8,11 +10,16 @@
     <p v-on:click="index++"><a class="next">&gt;</a></p>
   
   </div>
+
 </template>
 
 <script lang="ts">
 
   import { defineComponent } from 'vue';
+
+  interface ICarouselConfig {
+    slides: Array<string>;
+  }
    
   export default defineComponent({
     
@@ -21,8 +28,8 @@
     props: {
       
       slides: {
-        type: Array,
-      }
+        type: Array as () => ICarouselConfig[],
+      },
 
     },
 
