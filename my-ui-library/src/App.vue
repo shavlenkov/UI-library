@@ -1,6 +1,6 @@
 <template>
 
-<Navbar>
+  <Navbar>
 
     <template #brand>
 
@@ -25,7 +25,6 @@
     </template>
 
   </Navbar>
-
 
   <div class="view">
 
