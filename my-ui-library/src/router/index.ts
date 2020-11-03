@@ -38,13 +38,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'CarouselView',
     component: CarouselView
   },
-
-  {
-    path: '/Carousel',
-    name: 'CarouselView',
-    component: CarouselView
-  },
-
+  
   {
     path: '/DataTable',
     name: 'DataTableView',
