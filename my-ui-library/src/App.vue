@@ -73,9 +73,7 @@
 
   }
 
-  h1, h2 {
-    font-family: 'Arial';
-  }
+  h1, h2 { font-family: 'Arial'; }
 
   code {
     display: inline-block;
